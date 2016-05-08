@@ -14,7 +14,7 @@ header.site {
     margin-top: 20px;
     margin-bottom: 20px;
     text-decoration: none;
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-sm) {
 	    display: block;
 	    text-align: center;
     }
@@ -31,7 +31,7 @@ nav.main {
     float: right;
     margin-top: 24px;
     background-color: transparent;
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-sm) {
 		float: none;
 		margin-bottom: 24px;
 	    text-align: center;
@@ -85,10 +85,15 @@ nav.main {
 	text-align: left;
 	background: linear-gradient($primary, rgba($primary, 0.85)), url('../img/bg-jags.jpg') 0 0 no-repeat;
 	background-size: cover;
+	@media (max-width: $screen-sm) {
+	    height: 400px;
+    }
 	.intro {
-		//padding-top: calc(100% / 5);
 		padding-top: 200px;
 		color: white;
+		@media (max-width: $screen-sm) {
+			padding-top: 20px;
+		}
 		.title {
 			color: white;
 		}
@@ -181,10 +186,27 @@ nav.main {
         min-height: 100vh;
 	    top: 0;
 	    left: 0;
-	    padding: 0 60px;
+	    padding: 60px;
 	    overflow: auto;
 	    -webkit-overflow-scrolling: touch;
+	    @media (max-width: $screen-sm) {
+	        position: relative;
+	        padding: 0;
+	        overflow: hidden;
+	    }
+	    &.hide-scroll {
+		    width: 103%;//hackish, but works to remove 2nd scroll bar from nested scroll panels
+	    }
+	    section {
+		    @media (min-width: $screen-sm) {
+		        padding-top: 100px;
+		    }
+	    }
     }
+}
+.snap-menu.two {
+	position: absolute;
+	z-index: 999;
 }
 .player-container {
     margin: 0;
@@ -197,7 +219,11 @@ nav.main {
 	height: 100vh;
 	margin: 0;
 	padding: 0;
-    opacity: 0.9;
+    opacity: 1;
+    @media (max-width: $screen-sm) {
+        width: 100%;
+        height: 300px;
+    }
     &:after {
 	    content: '';
 	    position: absolute;
@@ -210,12 +236,12 @@ nav.main {
 		width: 100%;
 		height: 100%;
 		z-index: 1;
-		animation: blendBg 50s linear infinite; 
+		animation: blendBg 50s linear infinite;
     }
 
     &.bg-cover {
 	    background-color: transparent;
-	    background-position: 40% 100%;
+	    background-position: center center;
 	    background-repeat: no-repeat;
 	    background-size: cover;
     }
@@ -255,6 +281,9 @@ nav.main {
 }
 .player-bio {
 	padding: 60px;
+	@media (max-width: $screen-sm) {
+	    padding: 0 60px 60px;
+	}
 }
 /*--------------------------------------------------------------
 # Section: Ramsey

@@ -178,7 +178,7 @@ img {
 	    padding-right: 45px;
     }
     
-	@media (max-width: 768px) {
+	@media (max-width: $screen-xs) {
 		width: 100%;
 		display: block;
 		font-size: 1em;
@@ -224,7 +224,7 @@ img {
 	}	
 }
 .mobile-center {
-	@media (max-width: 768px) {
+	@media (max-width: $screen-sm) {
 		display: block;
 		max-width: 100%;
 		margin: 0 auto;
