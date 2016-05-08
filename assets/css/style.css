@@ -671,11 +671,11 @@ nav.main li + li a { margin-left: 20px; }
 /*--------------------------------------------------------------
 # Section: Subnav
 --------------------------------------------------------------*/
-.subnav-wrapper { height: 57px; overflow: inherit; background-color: white; overflow: hidden; }
+.subnav-wrapper { height: 60px; overflow: inherit; background-color: white; border-top: 1px solid #dbdbdb; overflow: hidden; }
 
 @media (max-width: 768px) { .subnav-wrapper { height: auto; } }
 
-.subnav { width: 100%; background-color: white; border-bottom: 1px solid #dbdbdb; }
+.subnav { width: 100%; background-color: #4c4643; }
 
 .subnav ul { margin: 0; padding: 0; }
 
@@ -685,18 +685,18 @@ nav.main li + li a { margin-left: 20px; }
 
 .subnav ul.flex li { min-width: inherit; }
 
-.subnav ul.flex li a { display: block; padding: 20px 10px; line-height: 1; text-align: center; text-transform: uppercase; text-decoration: none; color: #9B9B9B; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.subnav ul.flex li a { display: block; padding: 20px 10px; line-height: 1; text-align: center; text-decoration: none; color: white; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-.subnav ul.flex li a:hover, .subnav ul.flex li a.active { color: #4c4643; background-color: #e6e6e6; }
+.subnav ul.flex li a:hover, .subnav ul.flex li a.active { color: #9F792C; background-color: #312d2b; }
 
 @media (max-width: 768px) { .subnav ul.flex li a { padding-left: 0; padding-right: 0; } }
 
-.subnav.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 99999; box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.subnav.fixed { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99999; box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 /*--------------------------------------------------------------
 # Section: Global
 --------------------------------------------------------------*/
-section { position: relative; overflow: hidden; padding: 50px; width: 100%; height: 100vh; }
+section { position: relative; overflow: hidden; padding: 0; width: 100%; height: 100vh; }
 
 .player-container { margin: 0; padding: 0; background-color: white; }
 

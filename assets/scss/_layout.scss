@@ -108,9 +108,10 @@ nav.main {
 # Section: Subnav
 --------------------------------------------------------------*/
 .subnav-wrapper {
-    height: 57px; //height needed for snappanel
+    height: 60px; //height needed for snappanel
     overflow: inherit;
     background-color: white;
+    border-top: 1px solid $border;
     overflow: hidden;
     @media (max-width: $screen-sm) {
         height: auto;
@@ -118,8 +119,7 @@ nav.main {
 }
 .subnav {
 	width: 100%;
-	background-color: white;
-	border-bottom: 1px solid $border;
+	background-color: $black;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -140,14 +140,13 @@ nav.main {
 			padding: 20px 10px;
 			line-height: 1;
 			text-align: center;
-			text-transform: uppercase;
 			text-decoration: none;
-			color: $grey;
+			color: white;
 			transition: all 0.2s ease-in-out;
 			&:hover,
 			&.active {
-				color: $black;
-				background-color: darken(white,10%);
+				color: $accent2;
+				background-color: darken($black,10%);
 			}
 			@media (max-width: $screen-sm) {
 			    padding-left: 0;
@@ -158,7 +157,7 @@ nav.main {
 }
 .subnav.fixed {
 	position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     z-index: 99999;
@@ -172,7 +171,7 @@ nav.main {
  section {
     position: relative;
     overflow: hidden;
-    padding: 50px;
+    padding: 0;
     width: 100%;
     height: 100vh;
 }
