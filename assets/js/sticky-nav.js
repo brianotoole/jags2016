@@ -4,14 +4,13 @@
 var subNav = $('.subnav');
 var stickyNav = $('.sticky-nav');
 if ($.find(".subnav")[0]) {
-  $('.subnav li a, .anchor-btn').click(function(e) {
+  $('.subnav li a').click(function(e) {
     if ($(this).attr('href')[0] == '#') {
       e.preventDefault();
       var href = $.attr(this, 'href');
       $('html, body').animate({
-        scrollTop: $(href).offset().top - 15
+        scrollTop: $(href).offset().top
       }, 1000, function() {
-        // window.location.hash = href;
         if (history.pushState) {
           history.pushState(null, null, href);
         } else {
@@ -38,7 +37,6 @@ if ($.find(".subnav")[0]) {
     if ($(window).width() >= 768) { //above sm
       if (scroll >= subnavPos) {
         $('.subnav').addClass('fixed');
-        //$('.sticky-nav li a').addClass('active');
       } else {
         $('.subnav').removeClass('fixed');
       };

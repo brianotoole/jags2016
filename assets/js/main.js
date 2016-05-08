@@ -1,5 +1,10 @@
-// Master JS file
+/*--------------------------------------------------------------
+# Main.js - Master file, all JS compiles here
+--------------------------------------------------------------*/
 
-// @codekit-preprend "custom.js";
-// @codekit-prepent "snap-panel.js";
-// @codekit-prepent "wow.js"; 
+/*** Vendors ***/
+// @codekit-prepend "snap-panel.js";
+// @codekit-prepend "wow.js"; 
+
+/*** Site ***/
+// @codekit-prepend "sticky-nav.js";
