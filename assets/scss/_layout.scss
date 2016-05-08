@@ -191,7 +191,8 @@ nav.main {
     &:after {
 	    content: '';
 	    position: absolute;
-		background-image: url('http://s23.postimg.org/lcnfbeesr/blend1.jpg');
+		background-image: url('../img/effect-trees.jpg');
+		background-size: cover;
 		background-repeat: no-repeat;
 		background-color: transparent;
 		mix-blend-mode: soft-light;
@@ -199,8 +200,9 @@ nav.main {
 		width: 100%;
 		height: 100%;
 		z-index: 1;
-		animation: blendBg 20s linear infinite; 
+		animation: blendBg 50s linear infinite; 
     }
+
     &.bg-cover {
 	    background-color: transparent;
 	    background-position: 40% 100%;
@@ -212,18 +214,30 @@ nav.main {
     }
     &.jack {
 	    background-image: url('../img/player-jack.jpg');
+	    &:after {
+		    background-image: url('../img/effect-skyline.jpg');
+		    animation-duration: 75s;
+	    }
     }
     &.ngakoue {
 	    background-image: url('../img/player-ngakoue.jpg');
     }
     &.day {
 	    background-image: url('../img/player-day.jpg');
+	    &:after {
+		    background-image: url('../img/effect-skyline.jpg');
+		    animation-duration: 75s;
+	    }
     }
     &.holmes {
 	    background-image: url('../img/player-holmes.jpg');
     }
     &.allen {
 	    background-image: url('../img/player-allen.jpg');
+	    &:after {
+		    background-image: url('../img/effect-skyline.jpg');
+		    animation-duration: 75s;
+	    }
     }
     &.woodard {
 	    background-image: url('../img/player-woodard.jpg');
@@ -279,6 +293,16 @@ nav.main {
 --------------------------------------------------------------*/
 .woodard {
     background: linear-gradient(to right, $ca-purple 0%, $ca-purple 50%, $ca-silver 50%, $ca-silver 100%);
+}
+
+/*--------------------------------------------------------------
+# Section: Credits
+--------------------------------------------------------------*/
+.credits {
+    background: white;
+    .container {
+	    padding-top: 100px;
+    }
 }
 
 

@@ -702,7 +702,7 @@ section { position: relative; overflow: hidden; padding: 50px; width: 100%; heig
 
 .player-bg { position: relative; width: 50%; height: 100vh; margin: 0; padding: 0; opacity: 0.9; }
 
-.player-bg:after { content: ''; position: absolute; background-image: url("http://s23.postimg.org/lcnfbeesr/blend1.jpg"); background-repeat: no-repeat; background-color: transparent; mix-blend-mode: soft-light; background-position: -5rem; width: 100%; height: 100%; z-index: 1; -webkit-animation: blendBg 20s linear infinite; animation: blendBg 20s linear infinite; }
+.player-bg:after { content: ''; position: absolute; background-image: url("../img/effect-trees.jpg"); background-size: cover; background-repeat: no-repeat; background-color: transparent; mix-blend-mode: soft-light; background-position: -5rem; width: 100%; height: 100%; z-index: 1; -webkit-animation: blendBg 50s linear infinite; animation: blendBg 50s linear infinite; }
 
 .player-bg.bg-cover { background-color: transparent; background-position: 40% 100%; background-repeat: no-repeat; background-size: cover; }
 
@@ -710,13 +710,19 @@ section { position: relative; overflow: hidden; padding: 50px; width: 100%; heig
 
 .player-bg.jack { background-image: url("../img/player-jack.jpg"); }
 
+.player-bg.jack:after { background-image: url("../img/effect-skyline.jpg"); -webkit-animation-duration: 75s; animation-duration: 75s; }
+
 .player-bg.ngakoue { background-image: url("../img/player-ngakoue.jpg"); }
 
 .player-bg.day { background-image: url("../img/player-day.jpg"); }
 
+.player-bg.day:after { background-image: url("../img/effect-skyline.jpg"); -webkit-animation-duration: 75s; animation-duration: 75s; }
+
 .player-bg.holmes { background-image: url("../img/player-holmes.jpg"); }
 
 .player-bg.allen { background-image: url("../img/player-allen.jpg"); }
+
+.player-bg.allen:after { background-image: url("../img/effect-skyline.jpg"); -webkit-animation-duration: 75s; animation-duration: 75s; }
 
 .player-bg.woodard { background-image: url("../img/player-woodard.jpg"); }
 
@@ -756,6 +762,13 @@ section { position: relative; overflow: hidden; padding: 50px; width: 100%; heig
 # Section: Woodard
 --------------------------------------------------------------*/
 .woodard { background: -webkit-linear-gradient(left, #5954d9 0%, #5954d9 50%, #939BA1 50%, #939BA1 100%); background: linear-gradient(to right, #5954d9 0%, #5954d9 50%, #939BA1 50%, #939BA1 100%); }
+
+/*--------------------------------------------------------------
+# Section: Credits
+--------------------------------------------------------------*/
+.credits { background: white; }
+
+.credits .container { padding-top: 100px; }
 
 /*--------------------------------------------------------------
 # Animations

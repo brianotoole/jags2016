@@ -22,6 +22,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/effect-skyline.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 73495,
+		"inputAbbreviatedPath": "\/assets\/img\/effect-skyline.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/effect-skyline.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/effect-trees.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 264282,
+		"inputAbbreviatedPath": "\/assets\/img\/effect-trees.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/effect-trees.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/logo-shield.png": {
 		"fileType": 32768,
 		"ignore": 0,
