@@ -4,7 +4,7 @@
 var subNav = $('.subnav');
 var stickyNav = $('.sticky-nav');
 if ($.find(".subnav")[0]) {
-  $('.subnav li a').click(function(e) {
+  $('.subnav li a, .anchor-btn').click(function(e) {
     if ($(this).attr('href')[0] == '#') {
       e.preventDefault();
       var href = $.attr(this, 'href');

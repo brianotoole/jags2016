@@ -635,7 +635,7 @@ img.pad-top { padding-top: 1em; }
 --------------------------------------------------------------*/
 header.site { background-color: transparent; border-bottom: 1px solid white; }
 
-.branding { display: inline-block; margin-top: 20px; margin-bottom: 20px; text-decoration: none; /*.logo { width: 115px; }*/ }
+.branding { display: inline-block; margin-top: 20px; margin-bottom: 20px; text-decoration: none; }
 
 @media (max-width: 480px) { .branding { display: block; text-align: center; } }
 
@@ -662,7 +662,7 @@ nav.main li + li a { margin-left: 20px; }
 /*--------------------------------------------------------------
 # Section: Hero
 --------------------------------------------------------------*/
-.hero { position: relative; padding-bottom: 180px; text-align: left; background: -webkit-linear-gradient(#006778, rgba(0, 103, 120, 0.6)), url("../img/bg-hero.jpg") 0 0 no-repeat; background: linear-gradient(#006778, rgba(0, 103, 120, 0.6)), url("../img/bg-hero.jpg") 0 0 no-repeat; background-size: cover; }
+.hero { position: relative; height: calc(100vh - 125px); text-align: left; background: -webkit-linear-gradient(#006778, rgba(0, 103, 120, 0.6)), url("../img/bg-hero.jpg") 0 0 no-repeat; background: linear-gradient(#006778, rgba(0, 103, 120, 0.6)), url("../img/bg-hero.jpg") 0 0 no-repeat; background-size: cover; }
 
 .hero .intro { padding-top: 60px; color: white; }
 
