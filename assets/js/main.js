@@ -9,7 +9,7 @@ if ($.find(".subnav")[0]) {
       e.preventDefault();
       var href = $.attr(this, 'href');
       $('html, body').animate({
-        scrollTop: $(href).offset().top
+        scrollTop: $(href).offset().top - 15
       }, 1000, function() {
         // window.location.hash = href;
         if (history.pushState) {

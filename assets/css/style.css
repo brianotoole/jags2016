@@ -556,21 +556,19 @@ img.top { margin-top: 0; }
 img.pad-top { padding-top: 1em; }
 
 /* Buttons */
-.btn, .btn-default { display: inline-block; margin-bottom: 0; height: 48px; padding-left: 25px; padding-right: 25px; background-color: #006778; color: white; border: 1px solid #dbdbdb; text-align: center; text-decoration: none; font-family: "Open Sans", Verdana, Arial; font-size: 1em; font-weight: 700; letter-spacing: 1px; border-radius: 3px; white-space: nowrap; cursor: pointer; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; z-index: 1004; }
-
-.btn:hover, .btn-default:hover { border-color: #c2c2c2; }
+.btn, .btn-default { display: inline-block; margin-bottom: 0; height: 48px; padding-left: 25px; padding-right: 25px; border: none; background-color: #006778; color: white; text-align: center; text-decoration: none; font-family: "Open Sans", Verdana, Arial; font-size: 1em; font-weight: 400; letter-spacing: 1px; border-radius: 3px; white-space: nowrap; cursor: pointer; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; z-index: 1004; }
 
 .btn.bg-white, .btn-default.bg-white { background-color: white; color: #4c4643; }
 
 .btn.bg-white:hover, .btn-default.bg-white:hover { background-color: #e6e6e6; }
 
-.btn.bg-accent, .btn-default.bg-accent { background-color: #D7A22A; color: white; border-color: white; }
+.btn.bg-accent, .btn-default.bg-accent { background-color: #9F792C; color: white; }
 
-.btn.bg-accent:hover, .btn-default.bg-accent:hover { border-color: #ad8221; }
+.btn.bg-accent:hover, .btn-default.bg-accent:hover { background-color: #775b21; }
 
-.btn.bg-transparent, .btn-default.bg-transparent { background-color: transparent; border-color: white; color: #006778; }
+.btn.bg-transparent, .btn-default.bg-transparent { background-color: transparent; color: #006778; }
 
-.btn.bg-transparent:hover, .btn-default.bg-transparent:hover { border-color: #006778; color: white; }
+.btn.bg-transparent:hover, .btn-default.bg-transparent:hover { color: white; }
 
 @media (max-width: 860px) { .btn, .btn-default { padding-left: 45px; padding-right: 45px; } }
 
@@ -581,10 +579,6 @@ img.pad-top { padding-top: 1em; }
 /* Helpers */
 /* Major classes, positioning */
 .contain { height: 100%; max-width: 1100px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; }
-
-.section { padding: 90px 0; background-color: white; border-bottom: 1px solid #dbdbdb; }
-
-@media (max-width: 768px) { .section { padding: 30px 0; } }
 
 .absolute { position: absolute; z-index: 1004; }
 
@@ -599,6 +593,8 @@ img.pad-top { padding-top: 1em; }
 @media (max-width: 768px) { .title { text-align: center; } }
 
 @media (max-width: 768px) { .mobile-center { display: block; max-width: 100%; margin: 0 auto; text-align: center; } }
+
+.clearfix { clear: both; }
 
 /* Color classes */
 .text-primary { color: #006778; }
@@ -662,20 +658,20 @@ nav.main li + li a { margin-left: 20px; }
 /*--------------------------------------------------------------
 # Section: Hero
 --------------------------------------------------------------*/
-.hero { position: relative; height: calc(100vh - 125px); text-align: left; background: -webkit-linear-gradient(#006778, rgba(0, 103, 120, 0.6)), url("../img/bg-hero.jpg") 0 0 no-repeat; background: linear-gradient(#006778, rgba(0, 103, 120, 0.6)), url("../img/bg-hero.jpg") 0 0 no-repeat; background-size: cover; }
+.hero { position: relative; height: calc(100vh - 125px); text-align: left; background: -webkit-linear-gradient(#006778, rgba(0, 103, 120, 0.85)), url("../img/bg-jags.jpg") 0 0 no-repeat; background: linear-gradient(#006778, rgba(0, 103, 120, 0.85)), url("../img/bg-jags.jpg") 0 0 no-repeat; background-size: cover; }
 
-.hero .intro { padding-top: 60px; color: white; }
+.hero .intro { padding-top: 200px; color: white; }
 
 .hero .intro .title { color: white; }
 
-.hero .intro > p { margin-bottom: 35px; font-size: 1.25em; }
+.hero .intro p { margin-bottom: 35px; font-size: 1.25em; }
+
+.hero .intro a { color: white; text-decoration: underline; }
 
 /*--------------------------------------------------------------
 # Section: Subnav
 --------------------------------------------------------------*/
-.subnav-wrapper { height: 65px; overflow: inherit; background-color: white; overflow: hidden; }
-
-@media (max-width: 768px) { .subnav-wrapper { height: auto; } }
+.subnav-wrapper { height: auto; overflow: inherit; background-color: white; overflow: hidden; }
 
 .subnav { width: 100%; background-color: white; border-bottom: 1px solid #dbdbdb; }
 
@@ -696,32 +692,55 @@ nav.main li + li a { margin-left: 20px; }
 .subnav.fixed { position: fixed; top: 0; width: 100%; z-index: 99999; box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 /*--------------------------------------------------------------
-# Section: About
+# Section: Global
 --------------------------------------------------------------*/
-.about { height: 100vh; }
+.section { height: 100vh; padding: 0; background-color: white; border-bottom: 1px solid #dbdbdb; }
+
+@media (max-width: 768px) { .section { padding: 30px 0; } }
 
 /*--------------------------------------------------------------
-# Section: two
+# Section: Ramsey
 --------------------------------------------------------------*/
-.two { background-color: #006778; height: 100vh; }
+.ramsey { position: relative; width: 100%; height: 100%; background: -webkit-linear-gradient(left, #CEB888 0%, #CEB888 50%, #782F40 50%, #782F40 100%); background: linear-gradient(to right, #CEB888 0%, #CEB888 50%, #782F40 50%, #782F40 100%); }
+
+.ramsey .player-container { margin: 0; padding: 0; background-color: white; }
+
+.ramsey .player-bg { position: relative; background-image: url("../img/player-ramsey.jpg"); width: 50%; height: 100vh; margin: 0; padding: 0; background-color: transparent; background-position: 40% 100%; background-repeat: no-repeat; background-size: cover; opacity: 0.9; }
+
+.ramsey .player-bg:after { content: ''; position: absolute; background-image: url("http://s23.postimg.org/lcnfbeesr/blend1.jpg"); background-repeat: no-repeat; background-color: transparent; mix-blend-mode: soft-light; background-position: -5rem; width: 100%; height: 100%; z-index: 1; -webkit-animation: blendAnimate 30s linear infinite; animation: blendAnimate 30s linear infinite; }
+
+.ramsey .player-bio { padding: 60px; }
+
+@-webkit-keyframes blendAnimate { 0% { background-position: 0; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0; } }
+
+@keyframes blendAnimate { 0% { background-position: 0; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0; } }
+
+/*--------------------------------------------------------------
+# Section: Jack
+--------------------------------------------------------------*/
+.two { background-color: #006778; }
 
 /*--------------------------------------------------------------
 # Section: three
 --------------------------------------------------------------*/
-.three { background-color: #D7A22A; height: 100vh; }
+.three { background-color: #D7A22A; }
 
 /*--------------------------------------------------------------
 # Section: four
 --------------------------------------------------------------*/
-.four { background-color: #4c4643; height: 100vh; }
+.four { background-color: #4c4643; }
 
 /*--------------------------------------------------------------
 # Section: five
 --------------------------------------------------------------*/
-.five { background-color: #9B9B9B; height: 100vh; }
+.five { background-color: #9B9B9B; }
 
 /*--------------------------------------------------------------
 # Section: six
 --------------------------------------------------------------*/
-.six { background-color: #006778; height: 100vh; }
+.six { background-color: #006778; }
 /*# sourceMappingURL=style.css.map */

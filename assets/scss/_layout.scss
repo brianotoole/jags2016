@@ -83,17 +83,22 @@ nav.main {
 	position: relative;
 	height: calc(100vh - 125px);
 	text-align: left;
-	background: linear-gradient($primary, rgba($primary, 0.6)), url('../img/bg-hero.jpg') 0 0 no-repeat;
+	background: linear-gradient($primary, rgba($primary, 0.85)), url('../img/bg-jags.jpg') 0 0 no-repeat;
 	background-size: cover;
 	.intro {
-		padding-top: 60px;
+		//padding-top: calc(100% / 5);
+		padding-top: 200px;
 		color: white;
 		.title {
 			color: white;
 		}
-		> p {
+		p {
 			margin-bottom: 35px;
 			font-size: $font-lg;
+		}
+		a {
+			color: white;
+			text-decoration: underline;
 		}
 	}
 	
@@ -103,13 +108,10 @@ nav.main {
 # Section: Subnav
 --------------------------------------------------------------*/
 .subnav-wrapper {
-    height: 65px;
+    height: auto;
     overflow: inherit;
     background-color: white;
     overflow: hidden;
-    @media (max-width: $screen-sm) {
-        height: auto;
-    }
 }
 .subnav {
 	width: 100%;
@@ -161,18 +163,83 @@ nav.main {
 }
 
 /*--------------------------------------------------------------
-# Section: About
+# Section: Global
 --------------------------------------------------------------*/
-.about {
-	height: 100vh;
+.section {
+    height: 100vh;
+	padding: 0;
+	background-color: white;
+	border-bottom: 1px solid $border;
+	@media (max-width: $screen-sm) {
+		padding: 30px 0;
+	}
 }
 
 /*--------------------------------------------------------------
-# Section: two
+# Section: Ramsey
+--------------------------------------------------------------*/
+.ramsey {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, $fsu-gold 0%, $fsu-gold 50%, $fsu-garnet 50%, $fsu-garnet 100%);
+    
+    .player-container {
+	    margin: 0;
+	    padding: 0;
+	    background-color: white;
+	    //box-shadow: 0.01rem 0.01rem 1rem rgba($black,0.5);
+    }
+    .player-bg {
+        position: relative;
+	    background-image: url('../img/player-ramsey.jpg');
+	    width: 50%;
+	    height: 100vh;
+	    margin: 0;
+	    padding: 0;
+        background-color: transparent;
+        background-position: 40% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+        &:after {
+	        content: '';
+	        position: absolute;
+		    background-image: url('http://s23.postimg.org/lcnfbeesr/blend1.jpg');
+		    background-repeat: no-repeat;
+		    background-color: transparent;
+		    mix-blend-mode: soft-light;
+		    background-position: -5rem;
+		    width: 100%;
+		    height: 100%;
+		    z-index: 1;
+		    animation: blendAnimate 30s linear infinite; 
+        }
+    }
+    .player-bio {
+	    padding: 60px;
+    }
+}
+
+@keyframes blendAnimate {
+    0% {
+        background-position: 0;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# Section: Jack
 --------------------------------------------------------------*/
 .two {
 	background-color: $primary;
-	height: 100vh;
 }
 
 /*--------------------------------------------------------------
@@ -180,7 +247,6 @@ nav.main {
 --------------------------------------------------------------*/
 .three {
 	background-color: $accent;
-	height: 100vh;
 }
 
 /*--------------------------------------------------------------
@@ -188,7 +254,6 @@ nav.main {
 --------------------------------------------------------------*/
 .four {
 	background-color: $black;
-	height: 100vh;
 }
 
 /*--------------------------------------------------------------
@@ -196,7 +261,6 @@ nav.main {
 --------------------------------------------------------------*/
 .five {
 	background-color: $grey;
-	height: 100vh;
 }
 
 /*--------------------------------------------------------------
@@ -204,7 +268,6 @@ nav.main {
 --------------------------------------------------------------*/
 .six {
 	background-color: $primary;
-	height: 100vh;
 }
 
 

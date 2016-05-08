@@ -11,13 +11,13 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/img\/bg-hero.jpg": {
+	"\/assets\/img\/bg-jags.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 145885,
-		"inputAbbreviatedPath": "\/assets\/img\/bg-hero.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/bg-hero.jpg",
+		"initialSize": 296049,
+		"inputAbbreviatedPath": "\/assets\/img\/bg-jags.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/bg-jags.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -29,6 +29,17 @@
 		"initialSize": 14649,
 		"inputAbbreviatedPath": "\/assets\/img\/logo-shield.png",
 		"outputAbbreviatedPath": "\/assets\/img\/logo-shield.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/player-ramsey-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 92782,
+		"inputAbbreviatedPath": "\/assets\/img\/player-ramsey-min.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/player-ramsey-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
