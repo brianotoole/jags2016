@@ -33,13 +33,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/player-ramsey-min.jpg": {
+	"\/assets\/img\/player-ramsey.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 92782,
-		"inputAbbreviatedPath": "\/assets\/img\/player-ramsey-min.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/player-ramsey-min.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/player-ramsey.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/player-ramsey.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -31,9 +31,11 @@
         <div class="col-xs-12 intro text-center">
           <h1 class="title">A new era has begun<br />in Jacksonville.</h1>
           <p>On paper, Dave Caldwell's 2016 draft class has received <a href="http://espn.go.com/nfl/draft2016/insider/story/_/id/15230437/2016-nfl-draft-mel-kiper-grades-draft-class-every-nfl-team" target="_blank">huge praise</a>.<br />Let's take a look at the new faces in Duval.</p>
-          <a class="a-btn anchor-btn" href="#ramsey">
-            <button class="btn btn-large bg-accent" type="button">Meet the picks!</button>
-          </a>
+          <span class="snap-menu">
+            <a class="a-btn anchor-btn" href data-panel="ramsey">
+              <button class="btn btn-large bg-accent" type="button">Meet the picks!</button>
+            </a>
+          </span><!--/.snap-menu-->
         </div><!--/.col-->
       </div><!--/.row-->
     </div><!--/.container-->
@@ -44,41 +46,32 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <ul class="flex sticky-nav">
-              <li><a href="#ramsey">Jalen Ramsey</a></li>
-              <li><a href="#jack">Myles Jack</a></li>
-              <li><a href="#section3">Section 3</a></li>
-              <li><a href="#section4">Section 4</a></li>
-              <li><a href="#section5">Section 5</a></li>
-              <li><a href="#section6">Section 6</a></li>
-            </ul>
+            <ul class="flex sticky-nav snap-menu">
+              <li><a href data-panel="ramsey">Jalen Ramsey</a></li>
+              <li><a href data-panel="jack">Myles Jack</a></li>
+              <li><a href data-panel="three">Section 3</a></li>
+              <li><a href data-panel="four">Section 4</a></li>
+              <li><a href data-panel="five">Section 5</a></li>
+              <li><a href data-panel="six">Section 6</a></li>
+            </ul><!--/.snap-menu-->
           </div><!--/.col-->
         </div><!--/.row-->
       </div><!--/.container-->
     </div><!--/.subnav-->
   </div><!--/.subnav-wrapper-->
   
-  <section class="section ramsey" id="ramsey">
-    <div class="container">
-      <div class="row player-container">
-        <div class="col-xs-12 col-md-6 player-bg"></div>
-        <div class="col-xs-12 col-md-6 player-bio">
-          <h3>Jalen Ramsey</h3>
-          <h5>Pick: Round 1, #5 Overall</h5>
-        </div><!--/.player-bio-->
-      </div><!--/.player-container-->
-    </div><!--/.container-->
+  <section class="section ramsey" data-panel="ramsey">
   </section><!--/.ramsey-->
   
-  <section class="section jack" id="jack">
+  <section class="section jack" data-panel="jack">
   </section>
-  <section class="section three" id="section3">
+  <section class="section three" data-panel="three">
   </section>
-  <section class="section four" id="section4">
+  <section class="section four" data-panel="four">
   </section>
-  <section class="section five" id="section5">
+  <section class="section five" data-panel="five">
   </section>
-  <section class="section six" id="section6">
+  <section class="section six" data-panel="six">
   </section>
   
   
@@ -89,5 +82,13 @@
   
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/min/main-min.js"></script>
+  <script>
+  jQuery(function($) {
+    var options = {
+      $menu: $('.snap-menu')
+    };
+    $('body').panelSnap(options);
+  });
+</script>
 </body>
 </html>
