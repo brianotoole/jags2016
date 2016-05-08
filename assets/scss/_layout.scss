@@ -108,7 +108,7 @@ nav.main {
 # Section: Subnav
 --------------------------------------------------------------*/
 .subnav-wrapper {
-    height: 65px; //height needed for snappanel
+    height: 57px; //height needed for snappanel
     overflow: inherit;
     background-color: white;
     overflow: hidden;
@@ -176,52 +176,116 @@ nav.main {
     width: 100%;
     height: 100vh;
 }
+.player-container {
+    margin: 0;
+	padding: 0;
+	background-color: white;
+}
+.player-bg {
+    position: relative;
+	width: 50%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+    opacity: 0.9;
+    &:after {
+	    content: '';
+	    position: absolute;
+		background-image: url('http://s23.postimg.org/lcnfbeesr/blend1.jpg');
+		background-repeat: no-repeat;
+		background-color: transparent;
+		mix-blend-mode: soft-light;
+		background-position: -5rem;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		animation: blendBg 20s linear infinite; 
+    }
+    &.bg-cover {
+	    background-color: transparent;
+	    background-position: 40% 100%;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+    }
+    &.ramsey {
+	    background-image: url('../img/player-ramsey.jpg');
+    }
+    &.jack {
+	    background-image: url('../img/player-jack.jpg');
+    }
+    &.ngakoue {
+	    background-image: url('../img/player-ngakoue.jpg');
+    }
+    &.day {
+	    background-image: url('../img/player-day.jpg');
+    }
+    &.holmes {
+	    background-image: url('../img/player-holmes.jpg');
+    }
+    &.allen {
+	    background-image: url('../img/player-allen.jpg');
+    }
+    &.woodard {
+	    background-image: url('../img/player-woodard.jpg');
+    }
+}
+.player-bio {
+	padding: 60px;
+}
 /*--------------------------------------------------------------
 # Section: Ramsey
 --------------------------------------------------------------*/
 .ramsey {
-
-    width: 100%;
     background: linear-gradient(to right, $fsu-gold 0%, $fsu-gold 50%, $fsu-garnet 50%, $fsu-garnet 100%);
-    
-    .player-container {
-	    margin: 0;
-	    padding: 0;
-	    background-color: white;
-	    //box-shadow: 0.01rem 0.01rem 1rem rgba($black,0.5);
-    }
-    .player-bg {
-        position: relative;
-	    background-image: url('../img/player-ramsey.jpg');
-	    width: 50%;
-	    height: 100vh;
-	    margin: 0;
-	    padding: 0;
-        background-color: transparent;
-        background-position: 40% 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        opacity: 0.9;
-        &:after {
-	        content: '';
-	        position: absolute;
-		    background-image: url('http://s23.postimg.org/lcnfbeesr/blend1.jpg');
-		    background-repeat: no-repeat;
-		    background-color: transparent;
-		    mix-blend-mode: soft-light;
-		    background-position: -5rem;
-		    width: 100%;
-		    height: 100%;
-		    z-index: 1;
-		    animation: blendAnimate 30s linear infinite; 
-        }
-    }
-    .player-bio {
-	    padding: 60px;
-    }
 }
 
-@keyframes blendAnimate {
+/*--------------------------------------------------------------
+# Section: Jack
+--------------------------------------------------------------*/
+.jack {
+    background: linear-gradient(to right, $ucla-blue 0%, $ucla-blue 50%, $ucla-gold 50%, $ucla-gold 100%);
+}
+
+/*--------------------------------------------------------------
+# Section: Ngakoue
+--------------------------------------------------------------*/
+.ngakoue {
+    background: linear-gradient(to right, black 0%, black 50%, $maryland-red 50%, $maryland-red 100%);
+}
+
+/*--------------------------------------------------------------
+# Section: Day
+--------------------------------------------------------------*/
+.day {
+    background: linear-gradient(to right, $nd-blue 0%, $nd-blue 50%, $nd-gold 50%, $nd-gold 100%);
+}
+
+/*--------------------------------------------------------------
+# Section: Holmes
+--------------------------------------------------------------*/
+.holmes {
+    background: linear-gradient(to right, $montana 0%, $montana 50%, black 50%, black 100%);
+}
+
+/*--------------------------------------------------------------
+# Section: Allen
+--------------------------------------------------------------*/
+.allen {
+    background: linear-gradient(to right, $ark-black 0%, $ark-black 50%, $ark-red 50%, $ark-red 100%);
+}
+
+/*--------------------------------------------------------------
+# Section: Woodard
+--------------------------------------------------------------*/
+.woodard {
+    background: linear-gradient(to right, $ca-purple 0%, $ca-purple 50%, $ca-silver 50%, $ca-silver 100%);
+}
+
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+@keyframes blendBg {
     0% {
         background-position: 0;
     }
@@ -234,41 +298,3 @@ nav.main {
         background-position: 0;
     }
 }
-
-/*--------------------------------------------------------------
-# Section: Jack
---------------------------------------------------------------*/
-.two {
-	background-color: $primary;
-}
-
-/*--------------------------------------------------------------
-# Section: three
---------------------------------------------------------------*/
-.three {
-	background-color: $accent;
-}
-
-/*--------------------------------------------------------------
-# Section: four
---------------------------------------------------------------*/
-.four {
-	background-color: $black;
-}
-
-/*--------------------------------------------------------------
-# Section: five
---------------------------------------------------------------*/
-.five {
-	background-color: $grey;
-}
-
-/*--------------------------------------------------------------
-# Section: six
---------------------------------------------------------------*/
-.six {
-	background-color: $primary;
-}
-
-
-

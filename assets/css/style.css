@@ -671,7 +671,7 @@ nav.main li + li a { margin-left: 20px; }
 /*--------------------------------------------------------------
 # Section: Subnav
 --------------------------------------------------------------*/
-.subnav-wrapper { height: 65px; overflow: inherit; background-color: white; overflow: hidden; }
+.subnav-wrapper { height: 57px; overflow: inherit; background-color: white; overflow: hidden; }
 
 @media (max-width: 768px) { .subnav-wrapper { height: auto; } }
 
@@ -698,49 +698,72 @@ nav.main li + li a { margin-left: 20px; }
 --------------------------------------------------------------*/
 section { position: relative; overflow: hidden; padding: 50px; width: 100%; height: 100vh; }
 
+.player-container { margin: 0; padding: 0; background-color: white; }
+
+.player-bg { position: relative; width: 50%; height: 100vh; margin: 0; padding: 0; opacity: 0.9; }
+
+.player-bg:after { content: ''; position: absolute; background-image: url("http://s23.postimg.org/lcnfbeesr/blend1.jpg"); background-repeat: no-repeat; background-color: transparent; mix-blend-mode: soft-light; background-position: -5rem; width: 100%; height: 100%; z-index: 1; -webkit-animation: blendBg 20s linear infinite; animation: blendBg 20s linear infinite; }
+
+.player-bg.bg-cover { background-color: transparent; background-position: 40% 100%; background-repeat: no-repeat; background-size: cover; }
+
+.player-bg.ramsey { background-image: url("../img/player-ramsey.jpg"); }
+
+.player-bg.jack { background-image: url("../img/player-jack.jpg"); }
+
+.player-bg.ngakoue { background-image: url("../img/player-ngakoue.jpg"); }
+
+.player-bg.day { background-image: url("../img/player-day.jpg"); }
+
+.player-bg.holmes { background-image: url("../img/player-holmes.jpg"); }
+
+.player-bg.allen { background-image: url("../img/player-allen.jpg"); }
+
+.player-bg.woodard { background-image: url("../img/player-woodard.jpg"); }
+
+.player-bio { padding: 60px; }
+
 /*--------------------------------------------------------------
 # Section: Ramsey
 --------------------------------------------------------------*/
-.ramsey { width: 100%; background: -webkit-linear-gradient(left, #CEB888 0%, #CEB888 50%, #782F40 50%, #782F40 100%); background: linear-gradient(to right, #CEB888 0%, #CEB888 50%, #782F40 50%, #782F40 100%); }
-
-.ramsey .player-container { margin: 0; padding: 0; background-color: white; }
-
-.ramsey .player-bg { position: relative; background-image: url("../img/player-ramsey.jpg"); width: 50%; height: 100vh; margin: 0; padding: 0; background-color: transparent; background-position: 40% 100%; background-repeat: no-repeat; background-size: cover; opacity: 0.9; }
-
-.ramsey .player-bg:after { content: ''; position: absolute; background-image: url("http://s23.postimg.org/lcnfbeesr/blend1.jpg"); background-repeat: no-repeat; background-color: transparent; mix-blend-mode: soft-light; background-position: -5rem; width: 100%; height: 100%; z-index: 1; -webkit-animation: blendAnimate 30s linear infinite; animation: blendAnimate 30s linear infinite; }
-
-.ramsey .player-bio { padding: 60px; }
-
-@-webkit-keyframes blendAnimate { 0% { background-position: 0; }
-  50% { background-position: 100% 100%; }
-  100% { background-position: 0; } }
-
-@keyframes blendAnimate { 0% { background-position: 0; }
-  50% { background-position: 100% 100%; }
-  100% { background-position: 0; } }
+.ramsey { background: -webkit-linear-gradient(left, #CEB888 0%, #CEB888 50%, #782F40 50%, #782F40 100%); background: linear-gradient(to right, #CEB888 0%, #CEB888 50%, #782F40 50%, #782F40 100%); }
 
 /*--------------------------------------------------------------
 # Section: Jack
 --------------------------------------------------------------*/
-.two { background-color: #006778; }
+.jack { background: -webkit-linear-gradient(left, #005C8E 0%, #005C8E 50%, #AB841E 50%, #AB841E 100%); background: linear-gradient(to right, #005C8E 0%, #005C8E 50%, #AB841E 50%, #AB841E 100%); }
 
 /*--------------------------------------------------------------
-# Section: three
+# Section: Ngakoue
 --------------------------------------------------------------*/
-.three { background-color: #D7A22A; }
+.ngakoue { background: -webkit-linear-gradient(left, black 0%, black 50%, #F83A39 50%, #F83A39 100%); background: linear-gradient(to right, black 0%, black 50%, #F83A39 50%, #F83A39 100%); }
 
 /*--------------------------------------------------------------
-# Section: four
+# Section: Day
 --------------------------------------------------------------*/
-.four { background-color: #4c4643; }
+.day { background: -webkit-linear-gradient(left, #00122B 0%, #00122B 50%, #bf9565 50%, #bf9565 100%); background: linear-gradient(to right, #00122B 0%, #00122B 50%, #bf9565 50%, #bf9565 100%); }
 
 /*--------------------------------------------------------------
-# Section: five
+# Section: Holmes
 --------------------------------------------------------------*/
-.five { background-color: #9B9B9B; }
+.holmes { background: -webkit-linear-gradient(left, #784f72 0%, #784f72 50%, black 50%, black 100%); background: linear-gradient(to right, #784f72 0%, #784f72 50%, black 50%, black 100%); }
 
 /*--------------------------------------------------------------
-# Section: six
+# Section: Allen
 --------------------------------------------------------------*/
-.six { background-color: #006778; }
+.allen { background: -webkit-linear-gradient(left, #231F20 0%, #231F20 50%, #561d22 50%, #561d22 100%); background: linear-gradient(to right, #231F20 0%, #231F20 50%, #561d22 50%, #561d22 100%); }
+
+/*--------------------------------------------------------------
+# Section: Woodard
+--------------------------------------------------------------*/
+.woodard { background: -webkit-linear-gradient(left, #5954d9 0%, #5954d9 50%, #939BA1 50%, #939BA1 100%); background: linear-gradient(to right, #5954d9 0%, #5954d9 50%, #939BA1 50%, #939BA1 100%); }
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+@-webkit-keyframes blendBg { 0% { background-position: 0; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0; } }
+@keyframes blendBg { 0% { background-position: 0; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0; } }
 /*# sourceMappingURL=style.css.map */

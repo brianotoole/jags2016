@@ -33,6 +33,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/player-allen.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 70286,
+		"inputAbbreviatedPath": "\/assets\/img\/player-allen.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/player-allen.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/player-day.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85330,
+		"inputAbbreviatedPath": "\/assets\/img\/player-day.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/player-day.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/player-holmes.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 115500,
+		"inputAbbreviatedPath": "\/assets\/img\/player-holmes.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/player-holmes.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/player-jack.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 94992,
+		"inputAbbreviatedPath": "\/assets\/img\/player-jack.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/player-jack.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/player-ngakoue.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 186557,
+		"inputAbbreviatedPath": "\/assets\/img\/player-ngakoue.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/player-ngakoue.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/player-ramsey.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -40,6 +95,28 @@
 		"initialSize": 92782,
 		"inputAbbreviatedPath": "\/assets\/img\/player-ramsey.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/player-ramsey.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/player-woodard-old.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 93786,
+		"inputAbbreviatedPath": "\/assets\/img\/player-woodard-old.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/player-woodard-old.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/player-woodard.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71597,
+		"inputAbbreviatedPath": "\/assets\/img\/player-woodard.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/player-woodard.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
