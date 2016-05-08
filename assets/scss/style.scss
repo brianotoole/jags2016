@@ -1,0 +1,35 @@
+// Colors
+$primary: #1cad7e; //forest green
+$accent: #0D47A1; 
+
+$color-heading: #404040;
+
+$black: #4c4643;
+$grey: #9B9B9B;
+$border: #dbdbdb;
+
+// Sizings
+$font-xl: 1.5em;
+$font-lg: 1.25em;
+$font-md: 1.15em;
+$font-default: 1em;
+$font-sm: 0.85em;
+
+// Screen sizes
+$screen-sm: 768px;
+$screen-xs: 480px;
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600');
+$font-heading: 'Open Sans', Verdana, Arial;
+$font-body: 'Open Sans', serif, Helvetica;
+
+
+// Vendors
+@import 'normalize';
+@import 'bootstrap-grid-only';
+//@import 'font-icon';
+
+// Layout
+@import "base";
+@import "layout";

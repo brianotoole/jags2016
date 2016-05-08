@@ -1,0 +1,263 @@
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 320px;
+	font-size: 100%;
+	font-family: $font-body;
+	font-weight: 300;
+    overflow-x: hidden;
+    &.home {
+	    background-color: $primary;
+    }
+}
+
+a {
+	color: $primary;
+	transition: color 200ms;
+	
+	&:hover {
+		color: darken($primary, 5%);
+	}
+	
+	&:focus {
+		color: darken($primary, 5%);
+		outline: none;
+	}
+}
+
+/* Typography */
+h1,h2,h3,h4,h5,h6 {
+	font-family: $font-heading;
+	color: $color-heading;
+}
+h1 {
+    font-size: 3.125em;
+    font-weight: 600;
+    line-height: 1.4em;
+    @media (max-width: 768px) {
+	    font-size: 2em;
+    }
+}
+h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1.4em;
+    @media (max-width: 768px) {
+	    font-size: 1.75em;
+    }
+}
+h3 {
+    font-size: 2.25em;
+    font-weight: 400;
+    line-height: 1.4em;
+    @media (max-width: 768px) {
+	    font-size: 1.5em;
+    }
+}
+h4 {
+    font-size: 1.875em;
+    font-weight: 400;
+    line-height: 1.4em;
+    @media (max-width: 768px) {
+	    font-size: 1.25em;
+    }
+}
+h5 {
+    font-size: 1.5em;
+    font-weight: 300;
+    @media (max-width: 768px) {
+	    font-size: 1.125em;
+    }
+}
+h6 {
+    font-size: 1.25em;
+    font-weight: 300;
+    @media (max-width: 768px) {
+	    font-size: 1em;
+    }
+}
+
+p {
+	line-height: 1.5;
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0;
+	
+	+ p {
+		margin-top: 1em; 
+	}
+	
+	@media (max-width: 768px) {
+	    font-size: 0.9em;
+    }
+}
+
+ul {
+	margin: 1em 0;
+	padding-left: 0.7em;
+    list-style-position: inside;
+}
+
+li {
+    line-height: 1.5;
+    list-style-type: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	
+	&.right {
+		float: right;
+		margin: 1em 0 1em 1em;
+	}
+	&.top {
+		margin-top: 0;
+	}
+	&.pad-top {
+		padding-top: 1em;
+	}
+	
+}
+
+
+/* Buttons */
+.btn,
+.btn-default {
+    display: inline-block;
+    margin-bottom: 0;
+    height: 48px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: $primary;
+	color: white;
+    border: 1px solid $border;
+	text-align: center;
+	text-decoration: none;
+	font-family: $font-heading;
+	font-size: $font-default;
+	font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    z-index: 1004;
+    &:hover {
+        border-color: darken($border,10%);
+	}
+    //colors
+    &.bg-white {
+		background-color: white;
+		color: $black;
+	    &:hover {
+		    background-color: darken(white, 10%);
+	    }
+    }
+    &.bg-accent {
+		background-color: $accent;
+		color: white;
+	    border-color: white;
+	    &:hover {
+		     border-color: darken($accent,10%);
+	    }
+    }
+    &.bg-transparent {
+		background-color: transparent;
+	    border-color: white;
+	    color: $primary;
+	    &:hover {
+		    border-color: $primary;
+		    color: white;
+	    }
+    }
+    @media (max-width: 860px) {
+	    padding-left: 45px;
+	    padding-right: 45px;
+    }
+    
+	@media (max-width: 768px) {
+		width: 100%;
+		display: block;
+		font-size: 1em;
+	}
+    
+}
+.a-btn {text-decoration: none;}
+
+/* Helpers */
+/* Major classes, positioning */
+.contain {
+	height: 100%;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.section {
+	padding: 90px 0;
+	background-color: white;
+	border-bottom: 1px solid $border;
+	@media (max-width: $screen-sm) {
+		padding: 30px 0;
+	}
+}
+
+.absolute {
+	position: absolute;
+	z-index: 1004;
+}
+
+.centered {
+	max-width: 70%;
+	margin: 0 auto;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	text-align: center;
+	
+	@media (max-width: 768px) {
+		max-width: 100%;
+	}
+}
+
+.pad-none {padding: 0;}
+.text-center {text-align: center;}
+
+.title {
+	@media (max-width: 768px) {
+		text-align: center;
+	}	
+}
+.mobile-center {
+	@media (max-width: 768px) {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+/* Color classes */
+.text-primary {color: $primary;}
+.text-accent {color: $accent;}
+.text-white {color: white;}
+
+.bg-primary {background-color: $primary;}
+.bg-accent {background-color: $accent;}
+.bg-transparent {background-color: transparent;}
+.bg-white {background-color: white;}
+
+/* Weights */
+.text-reset { font-weight: 100; }
+.text-bold { font-weight: 700; }
+.text-reset { font-weight: 400; }
+
+/* Transforms */
+.text-uppercase { text-transform: uppercase; }
+.text-reset { text-transform: inherit; }
