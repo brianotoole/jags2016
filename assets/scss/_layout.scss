@@ -181,7 +181,9 @@ nav.main {
         min-height: 100vh;
 	    top: 0;
 	    left: 0;
+	    padding: 0 60px;
 	    overflow: auto;
+	    -webkit-overflow-scrolling: touch;
     }
 }
 .player-container {
@@ -258,49 +260,43 @@ nav.main {
 # Section: Ramsey
 --------------------------------------------------------------*/
 .ramsey {
-    background: linear-gradient(to right, $fsu-gold 0%, $fsu-gold 50%, $fsu-garnet 50%, $fsu-garnet 100%);
 }
 
 /*--------------------------------------------------------------
 # Section: Jack
 --------------------------------------------------------------*/
 .jack {
-    background: linear-gradient(to right, $ucla-blue 0%, $ucla-blue 50%, $ucla-gold 50%, $ucla-gold 100%);
 }
 
 /*--------------------------------------------------------------
 # Section: Ngakoue
 --------------------------------------------------------------*/
 .ngakoue {
-    background: linear-gradient(to right, black 0%, black 50%, $maryland-red 50%, $maryland-red 100%);
 }
 
 /*--------------------------------------------------------------
 # Section: Day
 --------------------------------------------------------------*/
 .day {
-    background: linear-gradient(to right, $nd-blue 0%, $nd-blue 50%, $nd-gold 50%, $nd-gold 100%);
 }
 
 /*--------------------------------------------------------------
 # Section: Holmes
 --------------------------------------------------------------*/
 .holmes {
-    background: linear-gradient(to right, $montana 0%, $montana 50%, black 50%, black 100%);
 }
 
 /*--------------------------------------------------------------
 # Section: Allen
 --------------------------------------------------------------*/
 .allen {
-    background: linear-gradient(to right, $ark-black 0%, $ark-black 50%, $ark-red 50%, $ark-red 100%);
+    //background: linear-gradient(to right, $ark-black 0%, $ark-black 50%, $ark-red 50%, $ark-red 100%);
 }
 
 /*--------------------------------------------------------------
 # Section: Woodard
 --------------------------------------------------------------*/
 .woodard {
-    background: linear-gradient(to right, $ca-purple 0%, $ca-purple 50%, $ca-silver 50%, $ca-silver 100%);
 }
 
 /*--------------------------------------------------------------
