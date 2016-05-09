@@ -191,19 +191,13 @@
     </div><!--/.container-->
   </section><!--/.day-->
 
-  
-  
-  
-  
-  
-  
-  
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/min/main-min.js"></script>
   <script>
   jQuery(function($) {
     var options = {
-      $menu: $('.snap-menu')
+      $menu: $('.snap-menu'),
+      slideSpeed: 500
     };
     $('body, .panels').panelSnap(options);
   });
