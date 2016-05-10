@@ -435,12 +435,12 @@ nav.main {
     }
 	@media (max-width: $screen-sm) {
 	    width: 100%;
-	    padding: 0 60px 60px;
+	    padding: 0 15px 45px;
 	}
 }
 .video-player {
 	width: 100%;
-    height: 400px;
+    height: 350px;
     margin: 30px 0 15px;
     padding: 0;
     text-align: center;
@@ -448,6 +448,9 @@ nav.main {
     background: linear-gradient($black, rgba($black, 0.75)), url("../img/bg-jags.jpg") 0 0 no-repeat;
     background-size: cover;
     border: 15px solid $border;
+    @media (max-width: $screen-sm) {
+	    height: 175px;
+	}
 }
 button.btn-video,
 .btn-video {
@@ -530,13 +533,53 @@ button.btn-video,
 # Section: Credits
 --------------------------------------------------------------*/
 .credits {
-    background: white;
-    .container {
-	    padding-top: 100px;
+	position: relative;
+	height: 100vh;
+	text-align: left;
+	background: linear-gradient($primary, rgba($primary, 0.85)), url('../img/bg-jags.jpg') 0 0 no-repeat;
+	background-size: cover;
+	@media (max-width: $screen-sm) {
+	    height: 475px;
     }
+    @media (max-width: $screen-xs) {
+        height: 525px;
+    }
+	.intro {
+		padding-top: 250px;
+		color: white;
+		@media (max-width: $screen-sm) {
+			padding-top: 20px;
+		}
+		.title {
+			color: white;
+		}
+		p {
+			margin-bottom: 35px;
+			font-size: $font-lg;
+		}
+		a {
+			color: white;
+			text-decoration: underline;
+			&.a-btn {
+			    margin: 10px 0;
+				text-decoration: none;
+				@media (min-width: $screen-sm) {
+		            margin-left: 15px;
+		        }
+			}
+		}
+	}
+	.btn {
+	    @media (max-width: $screen-sm) {
+		    margin: 10px auto;
+		}
+	}
+	em {
+	    font-size: $font-sm;
+	}
+
 }
-
-
+	
 /*--------------------------------------------------------------
 # Animations
 --------------------------------------------------------------*/

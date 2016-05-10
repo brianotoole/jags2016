@@ -790,9 +790,11 @@ section .panels.hide-scroll { width: 103%; }
 
 @media (max-width: 992px) { .player-bio { width: 50%; } }
 
-@media (max-width: 768px) { .player-bio { width: 100%; padding: 0 60px 60px; } }
+@media (max-width: 768px) { .player-bio { width: 100%; padding: 0 15px 45px; } }
 
-.video-player { width: 100%; height: 400px; margin: 30px 0 15px; padding: 0; text-align: center; position: relative; background: -webkit-linear-gradient(#4c4643, rgba(76, 70, 67, 0.75)), url("../img/bg-jags.jpg") 0 0 no-repeat; background: linear-gradient(#4c4643, rgba(76, 70, 67, 0.75)), url("../img/bg-jags.jpg") 0 0 no-repeat; background-size: cover; border: 15px solid #dbdbdb; }
+.video-player { width: 100%; height: 350px; margin: 30px 0 15px; padding: 0; text-align: center; position: relative; background: -webkit-linear-gradient(#4c4643, rgba(76, 70, 67, 0.75)), url("../img/bg-jags.jpg") 0 0 no-repeat; background: linear-gradient(#4c4643, rgba(76, 70, 67, 0.75)), url("../img/bg-jags.jpg") 0 0 no-repeat; background-size: cover; border: 15px solid #dbdbdb; }
+
+@media (max-width: 768px) { .video-player { height: 175px; } }
 
 button.btn-video, .btn-video { width: 50px; height: 50px; background-color: rgba(215, 162, 42, 0.8); border: 3px solid #9F792C; border-radius: 50%; position: absolute; top: 50%; left: 50%; margin-top: -25px; margin-left: -25px; outline: none; cursor: pointer; }
 
@@ -826,9 +828,29 @@ button.btn-video:hover, .btn-video:hover { background-color: #d7a22a; border-col
 /*--------------------------------------------------------------
 # Section: Credits
 --------------------------------------------------------------*/
-.credits { background: white; }
+.credits { position: relative; height: 100vh; text-align: left; background: -webkit-linear-gradient(#006778, rgba(0, 103, 120, 0.85)), url("../img/bg-jags.jpg") 0 0 no-repeat; background: linear-gradient(#006778, rgba(0, 103, 120, 0.85)), url("../img/bg-jags.jpg") 0 0 no-repeat; background-size: cover; }
 
-.credits .container { padding-top: 100px; }
+@media (max-width: 768px) { .credits { height: 475px; } }
+
+@media (max-width: 480px) { .credits { height: 525px; } }
+
+.credits .intro { padding-top: 250px; color: white; }
+
+@media (max-width: 768px) { .credits .intro { padding-top: 20px; } }
+
+.credits .intro .title { color: white; }
+
+.credits .intro p { margin-bottom: 35px; font-size: 1.25em; }
+
+.credits .intro a { color: white; text-decoration: underline; }
+
+.credits .intro a.a-btn { margin: 10px 0; text-decoration: none; }
+
+@media (min-width: 768px) { .credits .intro a.a-btn { margin-left: 15px; } }
+
+@media (max-width: 768px) { .credits .btn { margin: 10px auto; } }
+
+.credits em { font-size: 0.85em; }
 
 /*--------------------------------------------------------------
 # Animations
