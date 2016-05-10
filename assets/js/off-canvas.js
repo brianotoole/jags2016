@@ -44,7 +44,7 @@ function showAside() {
 	focusCloseButton();
   }
 }
-		
+
 // handle esc key
 window.addEventListener("keyup", function(e){
 // grab key pressed
@@ -52,6 +52,7 @@ var code = (e.keyCode ? e.keyCode : e.which);
 // escape
 if(code === 27) {
   killAside();
+  videoStop();
 }
 }, false);
 
@@ -68,7 +69,7 @@ if(code === 27) {
 
 		// send focus to close button
 		function focusCloseButton(){
-			$asideClose.focus();	
+			$asideClose.focus();
 		}
 
 		// send focus back to item that triggered event

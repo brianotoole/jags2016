@@ -83,13 +83,13 @@ nav.main {
 	position: relative;
 	height: calc(100vh - 125px);
 	text-align: left;
-	background: linear-gradient($primary, rgba($primary, 0.85)), url('../img/bg-jags.jpg') 0 0 no-repeat;
+	background: linear-gradient($primary, rgba($primary, 0.85)), url('../img/bg-jags.jpg') 0 -100px no-repeat;
 	background-size: cover;
 	@media (max-width: $screen-sm) {
 	    height: 400px;
     }
 	.intro {
-		padding-top: 200px;
+		padding-top: 175px;
 		color: white;
 		@media (max-width: $screen-sm) {
 			padding-top: 20px;
@@ -106,14 +106,14 @@ nav.main {
 			text-decoration: underline;
 		}
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 # Section: Subnav
 --------------------------------------------------------------*/
 .subnav-wrapper {
-    height: 60px; //height needed for snappanel
+    height: 57px; //height needed for snappanel
     overflow: inherit;
     background-color: white;
     border-top: 1px solid $border;
@@ -183,26 +183,26 @@ nav.main {
 	}
 }
 .aside {
-	position: fixed;
-	top: 55px; //make room for header
-	right: 0;
-	width: 50%;
-	height: 100%;
-	color: white;
-    background: linear-gradient(#006778, rgba(0, 103, 120, 0.85)), url("../img/bg-jags.jpg") center center no-repeat;
-    background-size: cover;
-	overflow: hidden;
-	z-index: -1;
-	opacity: 0;
-	transition: opacity 0.6s ease-in-out;
-	@media (max-width: $screen-sm) {
-	    top: 0;
-	    width: 100%;
-	}
-	.aside-details {
-		height: 100vh;
-	}
-	
+  position: fixed;
+  top: 55px; //make room for header
+  right: 0;
+  width: 50%;
+  height: 100%;
+  color: white;
+  background: linear-gradient(#006778, rgba(0, 103, 120, 0.85)), url("../img/bg-jags.jpg") center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  @media (max-width: $screen-sm) {
+    top: 0;
+    width: 100%;
+  }
+  .aside-details {
+    height: 100vh;
+  }
+
 
 	iframe {
 		width: 100%;
@@ -227,18 +227,18 @@ nav.main {
 
 .show-detail {
 	overflow: hidden;
-	.video-tiles { 
+	.video-tiles {
 	    //transform: translateX(-60%);
 	    z-index: -1;
 	}
 }
 
-.visually-hidden { 
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
 }
 
 
@@ -249,10 +249,10 @@ nav.main {
   background-color: rgba(black,0.5);
   &43 {
     padding-top: 75%;
-  } 
+  }
   &169 {
     //padding-top: 56%;
-  } 
+  }
 }
 .video-iframe {
   position: absolute;
@@ -262,11 +262,11 @@ nav.main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(black,0.4);
+  background-color: rgba(black,0.6);
 }
 .video-poster {
   position: absolute;
-  background-color: rgba(black,0.4);
+  background-color: rgba(black,0.6);
   top: 0;
   right: 0;
   left: 0;
@@ -322,7 +322,7 @@ nav.main {
 	    position: absolute;
 	    width: 100%;
 	    height: 100%;
-        min-height: 100vh;
+      min-height: 100vh;
 	    top: 0;
 	    left: 0;
 	    padding: 60px;
@@ -353,19 +353,19 @@ nav.main {
 	background-color: white;
 }
 .player-bg {
-    position: relative;
+  position: relative;
 	width: 50%;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
-    opacity: 1;
+  opacity: 1;
     @media (max-width: $screen-sm) {
         width: 100%;
         height: 300px;
     }
     &:after {
-	    content: '';
-	    position: absolute;
+	  content: '';
+	  position: absolute;
 		background-image: url('../img/effect-stadium.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -439,13 +439,13 @@ nav.main {
 	}
 }
 .video-player {
-	width: 100%;
-    height: 350px;
+  	width: 100%;
+    height: 200px;
     margin: 30px 0 15px;
     padding: 0;
     text-align: center;
     position: relative;
-    background: linear-gradient($black, rgba($black, 0.75)), url("../img/bg-jags.jpg") 0 0 no-repeat;
+    background: linear-gradient($black, rgba($black, 0.75)), url("../img/bg-jags.jpg") 0 50% no-repeat;
     background-size: cover;
     border: 15px solid $border;
     @media (max-width: $screen-sm) {
@@ -454,7 +454,7 @@ nav.main {
 }
 button.btn-video,
 .btn-video {
-	    width: 50px;
+	  width: 50px;
 		height: 50px;
 		background-color: rgba($accent, 0.8);
 		border: 3px solid $accent2;
@@ -470,8 +470,16 @@ button.btn-video,
 			top: 13px;
 			left: 16px;
 		}
+		&.overlay::after {
+			content: 'Click Play to Watch Video';
+			position: relative;
+			top: 54px;
+      right: 72px;
+			color: white;
+			font-size: $font-md;
+		}
 		&:before {
-		    content: "";
+		  content: "";
 			display: block;
 			width: 0;
 			height: 0;
@@ -579,7 +587,7 @@ button.btn-video,
 	}
 
 }
-	
+
 /*--------------------------------------------------------------
 # Animations
 --------------------------------------------------------------*/
@@ -608,7 +616,7 @@ button.btn-video,
     visibility: visible;
   }
 }
- 
+
 .slideInRight {
     animation-name: slideInRight;
 }

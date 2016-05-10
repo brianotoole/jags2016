@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19115",
+"creatorBuild": "17018",
 "files": {
 	"\/assets\/css\/style.css": {
 		"fileType": 16,
@@ -20,7 +20,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/bg-jags.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/effect-skyline.jpg": {
 		"fileType": 16384,
@@ -31,7 +31,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/effect-skyline.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/effect-skyline_dark.jpg": {
 		"fileType": 16384,
@@ -42,7 +42,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/effect-skyline_dark.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/effect-stadium.jpg": {
 		"fileType": 16384,
@@ -53,7 +53,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/effect-stadium.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/effect-trees.jpg": {
 		"fileType": 16384,
@@ -64,7 +64,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/effect-trees.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/logo-shield.png": {
 		"fileType": 32768,
@@ -75,7 +75,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/logo-shield.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/player-allen.jpg": {
 		"fileType": 16384,
@@ -86,7 +86,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/player-allen.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/player-day.jpg": {
 		"fileType": 16384,
@@ -97,7 +97,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/player-day.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/player-holmes.jpg": {
 		"fileType": 16384,
@@ -108,7 +108,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/player-holmes.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/player-jack.jpg": {
 		"fileType": 16384,
@@ -119,7 +119,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/player-jack.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/player-ngakoue.jpg": {
 		"fileType": 16384,
@@ -130,7 +130,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/player-ngakoue.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/player-ramsey.jpg": {
 		"fileType": 16384,
@@ -141,18 +141,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/player-ramsey.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/player-woodard-old.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 93786,
-		"inputAbbreviatedPath": "\/assets\/img\/player-woodard-old.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/player-woodard-old.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/player-woodard.jpg": {
 		"fileType": 16384,
@@ -163,7 +152,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/player-woodard.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/main.js": {
 		"fileType": 64,
@@ -365,30 +354,21 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/readme.md": {
-		"criticStyle": 0,
-		"enableFootnotes": 1,
-		"enableLabels": 1,
-		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
+		"enableFootnoteSupport": 1,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/readme.md",
-		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/readme.html",
-		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"parseMetadata": 1,
-		"processHTML": 0,
-		"randomFootnoteNumbers": 0,
-		"useCompatibilityMode": 0
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Brian",
+"lastSavedByUser": "Brian O'Toole",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -404,8 +384,6 @@
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
 	"autoSyncProjectSettingsFile": 1,
 	"browserRefreshDelay": 0,
-	"coffeeAutoOutputPathEnabled": 1,
-	"coffeeAutoOutputPathFilenamePattern": "*.js",
 	"coffeeAutoOutputPathRelativePath": "",
 	"coffeeAutoOutputPathReplace1": "",
 	"coffeeAutoOutputPathReplace2": "",
@@ -434,10 +412,6 @@
 			},
 		"empty_constructor_needs_parens": {
 			"active": 0,
-			"flagValue": -1
-			},
-		"ensure_comprehensions": {
-			"active": 1,
 			"flagValue": -1
 			},
 		"indentation": {
@@ -488,16 +462,8 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"no_nested_string_interpolation": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"no_plusplus": {
 			"active": 0,
-			"flagValue": -1
-			},
-		"no_private_function_fat_arrows": {
-			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -506,10 +472,6 @@
 			},
 		"no_tabs": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"no_this": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {
@@ -536,16 +498,8 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"prefer_english_operator": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"space_operators": {
 			"active": 0,
-			"flagValue": -1
-			},
-		"spacing_after_comma": {
-			"active": 1,
 			"flagValue": -1
 			}
 		},
@@ -555,8 +509,6 @@
 	"externalServerAddress": "http:\/\/localhost:8888",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
-	"hamlAutoOutputPathEnabled": 1,
-	"hamlAutoOutputPathFilenamePattern": "*.html",
 	"hamlAutoOutputPathRelativePath": "",
 	"hamlAutoOutputPathReplace1": "",
 	"hamlAutoOutputPathReplace2": "",
@@ -568,22 +520,19 @@
 	"hamlUseCDATA": 0,
 	"hamlUseDoubleQuotes": 0,
 	"hamlUseUnixNewlines": 0,
-	"jadeAutoOutputPathEnabled": 1,
-	"jadeAutoOutputPathFilenamePattern": "*.html",
 	"jadeAutoOutputPathRelativePath": "",
 	"jadeAutoOutputPathReplace1": "",
 	"jadeAutoOutputPathReplace2": "",
 	"jadeAutoOutputPathStyle": 0,
 	"jadeCompileDebug": 1,
 	"jadeOutputStyle": 0,
-	"javascriptAutoOutputPathEnabled": 1,
-	"javascriptAutoOutputPathFilenamePattern": "*-min.js",
 	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",
 	"javascriptAutoOutputPathStyle": 2,
 	"javascriptCreateSourceMap": 1,
 	"javascriptOutputStyle": 1,
+	"javascriptOutputSuffix": "-ck",
 	"javascriptSyntaxCheckerStyle": 1,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
@@ -601,10 +550,6 @@
 			},
 		"browser": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"browserify": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"camelcase": {
@@ -629,10 +574,6 @@
 			},
 		"dojo": {
 			"active": 0,
-			"flagValue": -1
-			},
-		"elision": {
-			"active": 1,
 			"flagValue": -1
 			},
 		"eqeqeq": {
@@ -671,10 +612,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"futurehostile": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"globalstrict": {
 			"active": 0,
 			"flagValue": -1
@@ -688,10 +625,6 @@
 			"flagValue": 4
 			},
 		"iterator": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"jasmine": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -739,10 +672,6 @@
 			"active": 0,
 			"flagValue": 4
 			},
-		"mocha": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"mootools": {
 			"active": 0,
 			"flagValue": -1
@@ -761,10 +690,6 @@
 			},
 		"noarg": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"nocomma": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"node": {
@@ -815,10 +740,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"qunit": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"regexp": {
 			"active": 1,
 			"flagValue": -1
@@ -836,10 +757,6 @@
 			"flagValue": -1
 			},
 		"shelljs": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"singleGroups": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -867,10 +784,6 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"varstmt": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"withstmt": {
 			"active": 0,
 			"flagValue": -1
@@ -889,6 +802,10 @@
 			}
 		},
 	"jsLintFlags2": {
+		"ass": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"bitwise": {
 			"active": 0,
 			"flagValue": -1
@@ -897,7 +814,15 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"couch": {
+		"closure": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"continue": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"debug": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -905,27 +830,75 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"es6": {
+		"eqeq": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"eval": {
+		"evil": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"for": {
+		"forin": {
 			"active": 0,
 			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
 			},
 		"maxlen": {
 			"active": 0,
 			"flagValue": 150
 			},
+		"newcap": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"node": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"this": {
+		"nomen": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sloppy": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"stupid": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"todo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unparam": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"vars": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -934,23 +907,11 @@
 			"flagValue": -1
 			}
 		},
-	"jsonAutoOutputPathEnabled": 0,
-	"jsonAutoOutputPathFilenamePattern": "*-min.json",
-	"jsonAutoOutputPathRelativePath": "",
-	"jsonAutoOutputPathReplace1": "",
-	"jsonAutoOutputPathReplace2": "",
-	"jsonAutoOutputPathStyle": 0,
-	"jsonOrderOutput": 0,
-	"jsonOutputStyle": 1,
-	"kitAutoOutputPathEnabled": 1,
-	"kitAutoOutputPathFilenamePattern": "*.html",
 	"kitAutoOutputPathRelativePath": "",
 	"kitAutoOutputPathReplace1": "",
 	"kitAutoOutputPathReplace2": "",
 	"kitAutoOutputPathStyle": 0,
 	"lessAllowInsecureImports": 0,
-	"lessAutoOutputPathEnabled": 1,
-	"lessAutoOutputPathFilenamePattern": "*.css",
 	"lessAutoOutputPathRelativePath": "..\/css",
 	"lessAutoOutputPathReplace1": "less",
 	"lessAutoOutputPathReplace2": "css",
@@ -963,27 +924,14 @@
 	"lessStrictImports": 0,
 	"lessStrictMath": 0,
 	"lessStrictUnits": 0,
-	"markdownAutoOutputPathEnabled": 1,
-	"markdownAutoOutputPathFilenamePattern": "*.html",
 	"markdownAutoOutputPathRelativePath": "",
 	"markdownAutoOutputPathReplace1": "",
 	"markdownAutoOutputPathReplace2": "",
 	"markdownAutoOutputPathStyle": 0,
-	"markdownCriticStyle": 0,
 	"markdownEnableFootnotes": 1,
-	"markdownEnableLabels": 1,
-	"markdownEnableSmartQuotes": 1,
-	"markdownEscapeLineBreaks": 0,
-	"markdownMaskEmailAddresses": 1,
-	"markdownOutputFormat": 0,
-	"markdownOutputStyle": 0,
-	"markdownParseMetadata": 1,
-	"markdownProcessHTML": 0,
-	"markdownRandomFootnoteNumbers": 0,
-	"markdownUseCompatibilityMode": 0,
+	"markdownEnableSmartyPants": 1,
+	"markdownExpandTabs": 1,
 	"reloadFileURLs": 0,
-	"sassAutoOutputPathEnabled": 1,
-	"sassAutoOutputPathFilenamePattern": "*.css",
 	"sassAutoOutputPathRelativePath": "..\/css",
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
@@ -996,52 +944,37 @@
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
 	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules",
-	"slimAutoOutputPathEnabled": 1,
-	"slimAutoOutputPathFilenamePattern": "*.html",
 	"slimAutoOutputPathRelativePath": "",
 	"slimAutoOutputPathReplace1": "",
 	"slimAutoOutputPathReplace2": "",
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 0,
 	"slimLogicless": 0,
-	"slimOutputFormat": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
-	"stylusAutoOutputPathEnabled": 1,
-	"stylusAutoOutputPathFilenamePattern": "*.css",
 	"stylusAutoOutputPathRelativePath": "..\/css",
 	"stylusAutoOutputPathReplace1": "stylus",
 	"stylusAutoOutputPathReplace2": "css",
 	"stylusAutoOutputPathStyle": 2,
-	"stylusCreateSourceMap": 0,
 	"stylusDebugStyle": 0,
 	"stylusImportCSS": 0,
 	"stylusOutputStyle": 0,
 	"stylusResolveRelativeURLS": 0,
-	"typescriptAutoOutputPathEnabled": 1,
-	"typescriptAutoOutputPathFilenamePattern": "*.js",
 	"typescriptAutoOutputPathRelativePath": "\/js",
 	"typescriptAutoOutputPathReplace1": "",
 	"typescriptAutoOutputPathReplace2": "",
 	"typescriptAutoOutputPathStyle": 2,
 	"typescriptCreateDeclarationFile": 0,
 	"typescriptCreateSourceMap": 0,
-	"typescriptJSXMode": 0,
 	"typescriptMinifyOutput": 0,
-	"typescriptModuleResolutionType": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
-	"typescriptPreserveConstEnums": 0,
+	"typescriptNoResolve": 0,
 	"typescriptRemoveComments": 0,
-	"typescriptSuppressImplicitAnyIndexErrors": 0,
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"bare-returns": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1074,10 +1007,6 @@
 			"flagValue": -1
 			},
 		"dead_code": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"drop_console": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1121,14 +1050,6 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"keep_fargs": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"keep_fnames": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -1141,16 +1062,8 @@
 			"active": 1,
 			"flagValue": 32000
 			},
-		"negate_iife": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"properties": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"pure_getters": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"quote-keys": {
