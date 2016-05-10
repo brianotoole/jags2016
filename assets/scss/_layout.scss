@@ -176,7 +176,7 @@ nav.main {
 	z-index: 1;
 	background: white;
 	//transition: transform 0.6s ease;
-	.tiles-a{
+	.tiles-a {
 		width: 100%;
 		position: relative;
 		overflow: hidden;
@@ -184,7 +184,7 @@ nav.main {
 }
 .aside {
 	position: fixed;
-	top: 55px;
+	top: 55px; //make room for header
 	right: 0;
 	width: 50%;
 	height: 100%;
@@ -195,9 +195,14 @@ nav.main {
 	z-index: -1;
 	opacity: 0;
 	transition: opacity 0.6s ease-in-out;
+	@media (max-width: $screen-sm) {
+	    top: 0;
+	    width: 100%;
+	}
 	.aside-details {
 		height: 100vh;
 	}
+	
 
 	iframe {
 		width: 100%;
@@ -310,6 +315,9 @@ nav.main {
     padding: 0;
     width: 100%;
     height: 100vh;
+    @media (max-width: $screen-sm) {
+        height: 100%;
+    }
     .panels {
 	    position: absolute;
 	    width: 100%;
@@ -358,7 +366,7 @@ nav.main {
     &:after {
 	    content: '';
 	    position: absolute;
-		background-image: url('../img/effect-trees.jpg');
+		background-image: url('../img/effect-stadium.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-color: transparent;
@@ -378,6 +386,9 @@ nav.main {
     }
     &.ramsey {
 	    background-image: url('../img/player-ramsey.jpg');
+	    &:after {
+		    background-image: url('../img/effect-skyline_dark.jpg');
+	    }
     }
     &.jack {
 	    background-image: url('../img/player-jack.jpg');
@@ -391,33 +402,52 @@ nav.main {
     }
     &.day {
 	    background-image: url('../img/player-day.jpg');
+	    &:after {
+		    background-image: url('../img/effect-skyline.jpg');
+	    }
     }
     &.holmes {
 	    background-image: url('../img/player-holmes.jpg');
+	    &:after {
+		    background-image: url('../img/effect-skyline_dark.jpg');
+		    animation-duration: 75s;
+	    }
     }
     &.allen {
 	    background-image: url('../img/player-allen.jpg');
+	    &:after {
+
+	    }
     }
     &.woodard {
 	    background-image: url('../img/player-woodard.jpg');
+	    &:after {
+		    background-image: url('../img/effect-skyline.jpg');
+		    animation-duration: 75s;
+	    }
     }
 }
 .player-bio {
 	padding: 60px;
+	padding-top: 45px;
+	@media (max-width: $screen-md) {
+        width: 50%;
+    }
 	@media (max-width: $screen-sm) {
+	    width: 100%;
 	    padding: 0 60px 60px;
 	}
 }
-
 .video-player {
 	width: 100%;
-    height: 175px;
+    height: 400px;
     margin: 30px 0 15px;
+    padding: 0;
     text-align: center;
     position: relative;
-    background: url(//i1284.photobucket.com/albums/a574/meecrobe/video_zps5bab07fb.jpg) center center no-repeat;
+    background: linear-gradient($black, rgba($black, 0.75)), url("../img/bg-jags.jpg") 0 0 no-repeat;
     background-size: cover;
-    float: left; 
+    border: 15px solid $border;
 }
 button.btn-video,
 .btn-video {
@@ -535,12 +565,11 @@ button.btn-video,
     visibility: visible;
   }
 }
+ 
 .slideInRight {
     animation-name: slideInRight;
 }
-
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
 }
-

@@ -33,6 +33,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/effect-skyline_dark.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96262,
+		"inputAbbreviatedPath": "\/assets\/img\/effect-skyline_dark.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/effect-skyline_dark.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/effect-stadium.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 206292,
+		"inputAbbreviatedPath": "\/assets\/img\/effect-stadium.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/effect-stadium.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/effect-trees.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

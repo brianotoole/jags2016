@@ -537,6 +537,8 @@ h6 { font-size: 1.25em; font-weight: 300; }
 
 @media (max-width: 768px) { h6 { font-size: 1em; } }
 
+.margin-bottom-less { margin: 30px 0 -20px; line-height: 1; }
+
 p { line-height: 1.5; font-size: 1em; font-weight: 300; margin: 0; }
 
 p + p { margin-top: 1em; }
@@ -586,7 +588,7 @@ img.pad-top { padding-top: 1em; }
 
 @media (max-width: 768px) { .centered { max-width: 100%; } }
 
-.pad-none { padding: 0; }
+.pad-none, .no-pad { padding: 0; }
 
 .text-center { text-align: center; }
 
@@ -703,6 +705,8 @@ nav.main li + li a { margin-left: 20px; }
 
 .aside { position: fixed; top: 55px; right: 0; width: 50%; height: 100%; color: white; background: -webkit-linear-gradient(#006778, rgba(0, 103, 120, 0.85)), url("../img/bg-jags.jpg") center center no-repeat; background: linear-gradient(#006778, rgba(0, 103, 120, 0.85)), url("../img/bg-jags.jpg") center center no-repeat; background-size: cover; overflow: hidden; z-index: -1; opacity: 0; -webkit-transition: opacity 0.6s ease-in-out; transition: opacity 0.6s ease-in-out; }
 
+@media (max-width: 768px) { .aside { top: 0; width: 100%; } }
+
 .aside .aside-details { height: 100vh; }
 
 .aside iframe { width: 100%; height: 100vh; vertical-align: top; }
@@ -736,6 +740,8 @@ nav.main li + li a { margin-left: 20px; }
 --------------------------------------------------------------*/
 section { position: relative; overflow: hidden; padding: 0; width: 100%; height: 100vh; }
 
+@media (max-width: 768px) { section { height: 100%; } }
+
 section .panels { position: absolute; width: 100%; height: 100%; min-height: 100vh; top: 0; left: 0; padding: 60px; overflow: auto; -webkit-overflow-scrolling: touch; }
 
 @media (max-width: 768px) { section .panels { position: relative; padding: 0; overflow: hidden; } }
@@ -752,11 +758,13 @@ section .panels.hide-scroll { width: 103%; }
 
 @media (max-width: 768px) { .player-bg { width: 100%; height: 300px; } }
 
-.player-bg:after { content: ''; position: absolute; background-image: url("../img/effect-trees.jpg"); background-size: cover; background-repeat: no-repeat; background-color: transparent; mix-blend-mode: soft-light; background-position: -5rem; width: 100%; height: 100%; z-index: 1; -webkit-animation: blendBg 50s linear infinite; animation: blendBg 50s linear infinite; }
+.player-bg:after { content: ''; position: absolute; background-image: url("../img/effect-stadium.jpg"); background-size: cover; background-repeat: no-repeat; background-color: transparent; mix-blend-mode: soft-light; background-position: -5rem; width: 100%; height: 100%; z-index: 1; -webkit-animation: blendBg 50s linear infinite; animation: blendBg 50s linear infinite; }
 
 .player-bg.bg-cover { background-color: transparent; background-position: center center; background-repeat: no-repeat; background-size: cover; }
 
 .player-bg.ramsey { background-image: url("../img/player-ramsey.jpg"); }
+
+.player-bg.ramsey:after { background-image: url("../img/effect-skyline_dark.jpg"); }
 
 .player-bg.jack { background-image: url("../img/player-jack.jpg"); }
 
@@ -766,17 +774,25 @@ section .panels.hide-scroll { width: 103%; }
 
 .player-bg.day { background-image: url("../img/player-day.jpg"); }
 
+.player-bg.day:after { background-image: url("../img/effect-skyline.jpg"); }
+
 .player-bg.holmes { background-image: url("../img/player-holmes.jpg"); }
+
+.player-bg.holmes:after { background-image: url("../img/effect-skyline_dark.jpg"); -webkit-animation-duration: 75s; animation-duration: 75s; }
 
 .player-bg.allen { background-image: url("../img/player-allen.jpg"); }
 
 .player-bg.woodard { background-image: url("../img/player-woodard.jpg"); }
 
-.player-bio { padding: 60px; }
+.player-bg.woodard:after { background-image: url("../img/effect-skyline.jpg"); -webkit-animation-duration: 75s; animation-duration: 75s; }
 
-@media (max-width: 768px) { .player-bio { padding: 0 60px 60px; } }
+.player-bio { padding: 60px; padding-top: 45px; }
 
-.video-player { width: 100%; height: 175px; margin: 30px 0 15px; text-align: center; position: relative; background: url(//i1284.photobucket.com/albums/a574/meecrobe/video_zps5bab07fb.jpg) center center no-repeat; background-size: cover; float: left; }
+@media (max-width: 992px) { .player-bio { width: 50%; } }
+
+@media (max-width: 768px) { .player-bio { width: 100%; padding: 0 60px 60px; } }
+
+.video-player { width: 100%; height: 400px; margin: 30px 0 15px; padding: 0; text-align: center; position: relative; background: -webkit-linear-gradient(#4c4643, rgba(76, 70, 67, 0.75)), url("../img/bg-jags.jpg") 0 0 no-repeat; background: linear-gradient(#4c4643, rgba(76, 70, 67, 0.75)), url("../img/bg-jags.jpg") 0 0 no-repeat; background-size: cover; border: 15px solid #dbdbdb; }
 
 button.btn-video, .btn-video { width: 50px; height: 50px; background-color: rgba(215, 162, 42, 0.8); border: 3px solid #9F792C; border-radius: 50%; position: absolute; top: 50%; left: 50%; margin-top: -25px; margin-left: -25px; outline: none; cursor: pointer; }
 
