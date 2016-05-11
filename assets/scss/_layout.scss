@@ -553,8 +553,9 @@ button.btn-video,
 	text-align: left;
 	background: linear-gradient($primary, rgba($primary, 0.85)), url('../img/bg-jags.jpg') 0 0 no-repeat;
 	background-size: cover;
-	@media (max-width: $screen-sm) {
-	    height: 475px;
+	  @media (max-width: $screen-sm) {
+	      height: 475px;
+			  background-position: center center;
     }
     @media (max-width: $screen-xs) {
         height: 525px;
