@@ -25,8 +25,6 @@ header.site {
 	}
 }
 
-
-
 nav.main {
     float: right;
     margin-top: 24px;
@@ -45,25 +43,25 @@ nav.main {
         display: inline-block;
         a {
             position: relative;
-	        color: white;
-	        font-weight: 100;
-	        letter-spacing: 1px;
-	        text-decoration: none;
+		        color: white;
+		        font-weight: 100;
+		        letter-spacing: 1px;
+		        text-decoration: none;
             transition: all 0.3s ease-in-out;
             &:hover {
 	            color: $border;
             }
             &:before {
 	            content: '';
-			    position: absolute;
-			    width: 100%;
-			    height: 2px;
-			    bottom: -4px;
-			    left: 0;
-			    background-color: $border;
-			    visibility: hidden;
-			    transform: scaleX(0);
-			    transition: all 0.3s ease-in-out 0s;
+					    position: absolute;
+					    width: 100%;
+					    height: 2px;
+					    bottom: -4px;
+					    left: 0;
+					    background-color: $border;
+					    visibility: hidden;
+					    transform: scaleX(0);
+					    transition: all 0.3s ease-in-out 0s;
             }
             &:hover:before {
 	            visibility: visible;
@@ -87,6 +85,7 @@ nav.main {
 	background-size: cover;
 	@media (max-width: $screen-sm) {
 	    height: 400px;
+			background-position: center center;
     }
 	.intro {
 		padding-top: 175px;
@@ -125,6 +124,7 @@ nav.main {
 .subnav {
 	width: 100%;
 	background-color: $black;
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -147,6 +147,7 @@ nav.main {
 			text-align: center;
 			text-decoration: none;
 			color: white;
+			border-bottom: 1px solid lighten($black,5%);
 			transition: all 0.2s ease-in-out;
 			&:hover,
 			&.active {
@@ -170,9 +171,8 @@ nav.main {
     transition: all 0.2s ease-in-out;
 }
 
-
 .video-tiles {
-    position: relative;
+  position: relative;
 	z-index: 1;
 	background: white;
 	//transition: transform 0.6s ease;
@@ -262,11 +262,11 @@ nav.main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(black,0.6);
+  background-color: rgba(black,0.5);
 }
 .video-poster {
   position: absolute;
-  background-color: rgba(black,0.6);
+  background-color: rgba(black,0.5);
   top: 0;
   right: 0;
   left: 0;
@@ -348,7 +348,7 @@ nav.main {
 	z-index: 999;
 }
 .player-container {
-    margin: 0;
+  margin: 0;
 	padding: 0;
 	background-color: white;
 }
@@ -374,6 +374,7 @@ nav.main {
 		background-position: -5rem;
 		width: 100%;
 		height: 100%;
+	  opacity: 0.5;
 		z-index: 1;
 		animation: blendBg 50s linear infinite;
     }
@@ -410,19 +411,22 @@ nav.main {
 	    background-image: url('../img/player-holmes.jpg');
 	    &:after {
 		    background-image: url('../img/effect-skyline_dark.jpg');
+				opacity: 0.3;
 		    animation-duration: 75s;
 	    }
     }
     &.allen {
 	    background-image: url('../img/player-allen.jpg');
-	    &:after {
-
-	    }
+			&:after {
+				opacity: 0.3;
+			}
     }
     &.woodard {
+
 	    background-image: url('../img/player-woodard.jpg');
 	    &:after {
-		    background-image: url('../img/effect-skyline.jpg');
+		    background-image: url('../img/effect-trees.jpg');
+				opacity: 0.7;
 		    animation-duration: 75s;
 	    }
     }
@@ -435,7 +439,7 @@ nav.main {
     }
 	@media (max-width: $screen-sm) {
 	    width: 100%;
-	    padding: 0 15px 45px;
+	    padding: 0 20px 45px;
 	}
 }
 .video-player {
@@ -445,7 +449,7 @@ nav.main {
     padding: 0;
     text-align: center;
     position: relative;
-    background: linear-gradient($black, rgba($black, 0.75)), url("../img/bg-jags.jpg") 0 50% no-repeat;
+    background: linear-gradient($black, rgba($black,0.9)), url("../img/bg-jags.jpg") 0 50% no-repeat;
     background-size: cover;
     border: 15px solid $border;
     @media (max-width: $screen-sm) {
@@ -491,9 +495,9 @@ button.btn-video,
 		}
 		&:hover {
 			background-color: rgba($accent, 1);
-		    border-color: darken($accent2, 2%);
+		  border-color: darken($accent2, 2%);
 		}
-    }
+  }
 /*--------------------------------------------------------------
 # Section: Ramsey
 --------------------------------------------------------------*/
