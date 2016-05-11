@@ -315,13 +315,14 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/min/main-min.js"></script>
   <script>
-  jQuery(function($) {
-    //snap init
-    var options = {
-      $menu: $('.snap-menu'),
-      slideSpeed: 300,
-      offset: 56
-    };
+  if($(window).width() >= 768) { //disable on screen-sm
+    jQuery(function($) {
+      //snap init
+      var options = {
+        $menu: $('.snap-menu'),
+        slideSpeed: 300,
+        offset: 56
+      };
     $('body, .panels').panelSnap(options);
     //Wow init
     wow = new WOW( {
@@ -331,7 +332,8 @@
       mobile: false
     })
     wow.init();
-  });
+    });
+  }
   //Google Analytics
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
